@@ -32,7 +32,7 @@ Este proyecto tiene como objetivo automatizar la extracción, transformación y 
 - Una vez transformados los datos, se insertan en la tabla previamente creada en la base de datos Redshift utilizando una función hecha en Python mediante un **PythonOperator**.
 
 ### 6. Selección de Datos de la Tabla
-- Luego de la carga, se realiza una consulta a la tabla en Redshift para seleccionar los datos relevantes del clima de un departamento específico de la provincia de Misiones.
+- Luego de la carga, se realiza una consulta a la tabla en Redshift para obtener los datos relevantes del clima de un departamento específico de la provincia de Misiones que seleccionemos (lo hacemos desde `dags/modules/obtener_datos.py`).
 
 ### 7. Envío de Correo de Notificación
 - Dependiendo de los valores climáticos obtenidos se envía una notificación por correo electrónico informando del clima en el departamento elegido.
