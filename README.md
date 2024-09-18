@@ -98,7 +98,7 @@ Después de la ejecución del DAG, los datos estarán almacenados en la tabla en
 ### 4. Notificación por Correo
 El DAG envía un correo en base a la sensación térmica de la hora en que se ejecute. El contenido del correo también estara personalizado de acuerdo a los datos obtenidos desde la APi para un departamento especifico seleccionado.
 
-### Detener los Servicios
+## Detener los Servicios
 Para detener los servicios de Docker, ejecuta el siguiente comando:
 
 ```bash
