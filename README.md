@@ -21,7 +21,7 @@ Este proyecto tiene como objetivo automatizar la extracción, transformación y 
 ### 2. Creación de la Tabla en Redshift
 - Primero se debera crear una tabla en la base de datos Redshift mediante una consulta SQL que contenga los siguientes campos: 
     1. Nombre de los departamentos de la provincia que seleccionemos (en este caso Misiones).
-    2. Latitud de la capital de estos departamento.
+    2. Latitud de la capital de estos departamentos.
     3. Longitud de la capital de estos departamentos.
 Con esta tabla podremos recorrer la API obteniendo asi los datos climaticos de los distintos departamentos de la provincia seleccionada. 
 - Al iniciarse el DAG, primero crea una tabla en la base de datos Redshift con la estructura adecuada para almacenar los datos climáticos que se extraerán de la API.
