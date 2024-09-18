@@ -9,7 +9,7 @@ Este proyecto tiene como objetivo automatizar la extracción, transformación y 
 1. **Docker Compose**: Se utiliza para orquestar los contenedores necesarios, incluyendo Apache Airflow.
 2. **Apache Airflow**: Ejecuta el DAG diario que realiza la operación ETL.
 3. **Amazon Redshift**: Base de datos en la nube donde se almacenan los datos climáticos.
-4. **API pública**: Fuente de datos meteorológicos extraidos de la API de <a href="https://www.openai.com" target="_blank">OpenAI</a>
+4. **API pública**: Fuente de datos meteorológicos extraidos de la API de <a href="https://openweathermap.org/" target="_blank">OpenWeather</a>.
 5. **Sistema de correo**: Envío de notificaciones por correo electrónico basado en los valores climáticos.
 
 ## Flujos del Proyecto
