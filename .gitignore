@@ -1,0 +1,8 @@
+/venv/
+/config/
+/logs/
+/plugins/
+**/__pycache__/
+*.env
+main.py
+script_db.sql
