@@ -1,7 +1,7 @@
 import requests
 import pandas as pd
 import datetime
-from .crear_conexion import crear_conexion, API_KEY
+from .crear_conexion import crear_conexion, API_KEY, REDSHIFT_SCHEMA
 
 def weather_main_trad(weather):
     climas={
@@ -19,7 +19,7 @@ def crear_df():
 
     conn = crear_conexion()
     with conn.cursor() as cur:
-        cur.execute("SELECT * FROM agustinsoza964_coderhouse.localidades_misiones")
+        cur.execute(f"SELECT * FROM {REDSHIFT_SCHEMA}.localidades_misiones")
         localidades = cur.fetchall()
     conn.close()
     appid = API_KEY
