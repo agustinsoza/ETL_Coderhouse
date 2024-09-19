@@ -72,9 +72,6 @@ Para establecer las conexiones y credenciales necesarias, se deben configurar la
 - `AIRFLOW_VAR_EMAIL`: Variable personalizada de Airflow que almacena la dirección de correo del remitente.
 - `AIRFLOW_VAR_EMAIL_PASSWORD`: Variable personalizada de Airflow que contiene la contraseña para autenticar el correo del remitente.
 - `AIRFLOW_VAR_TO_ADDRESS`: Dirección de correo del destinatario a la cual Airflow enviará los correos.
-
-Dentro de `dags/modules/` tambien tendremos un archivo `.env` con las siguientes variables de entorno:
-
 - `REDSHIFT_DB`: Nombre de la base de datos en Redshift que se utilizará para las conexiones.
 - `REDSHIFT_HOST`: Dirección del host de la base de datos Redshift.
 - `REDSHIFT_USER`: Usuario utilizado para autenticar la conexión a la base de datos en Redshift.
